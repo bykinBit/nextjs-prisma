@@ -21,7 +21,7 @@ export default async function Home() {
         <p className="text-gray-500">No published posts yet.</p>
       ) : (
         <div className="space-y-4">
-          {feed.map((post) => (
+          {feed.map((post: any) => (
             <Post key={post.id} post={post} />
           ))}
         </div>

@@ -32,7 +32,7 @@ export default async function Drafts() {
                 <p className="text-gray-500">You have no drafts.</p>
             ) : (
                 <div className="space-y-4">
-                    {drafts.map((post) => (
+                    {drafts.map((post: any) => (
                         <Post key={post.id} post={post} />
                     ))}
                 </div>
